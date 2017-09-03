@@ -1,15 +1,12 @@
 {
-  "name": "postcss-style-guide",
+  "name": "postcss-style-gx",
   "version": "0.14.0",
   "description": "PostCSS plugin to generate a style guide automatically",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/morishitter/postcss-style-guide/git"
-  },
+  "repository": "charlespeters/postcss-style-gx",
   "keywords": [
     "style-guide",
     "postcss-plugin"
@@ -17,15 +14,16 @@
   "author": "Masaaki Morishita",
   "license": "MIT",
   "dependencies": {
+    "clipboardy": "^1.1.4",
     "css-annotation": "^0.6.0",
     "css-annotation-block": "^0.1.0",
     "cssnano": "^3.0.1",
-    "ejs": "^2.3.1",
+    "ejs": "^2.5.7",
     "highlight.js": "^8.5.0",
     "is-color": "^0.2.0",
     "marked": "^0.3.3",
     "mkdirp": "^0.5.1",
-    "postcss": "^5.0.2",
+    "postcss": "^6.0.10",
     "psg-theme-default": "^1.0.0"
   },
   "devDependencies": {

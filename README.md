@@ -1,13 +1,14 @@
-# postcss-style-guide [![Build Status](https://travis-ci.org/morishitter/postcss-style-guide.svg)](https://travis-ci.org/morishitter/postcss-style-guide)
+# postcss-style-gx
+[PostCSS](https://github.com/postcss/postcss) plugin to generate a style guide automatically.CSS comments will be parsed through Markdown and displayed in a generated HTML document.
 
-[PostCSS](https://github.com/postcss/postcss) plugin to generate a style guide automatically.
 
-CSS comments will be parsed through Markdown and displayed in a generated HTML document.
+**This is a fork of [postcss-style-guide](https://github.com/morishitter/postcss-style-guide)**
+
 
 ## Install
 
 ```shell
-$ npm install postcss-style-guide
+$ npm install postcss-style-gx
 ```
 
 ## Example
@@ -17,7 +18,7 @@ Node.js:
 ```js
 var fs = require('fs');
 var postcss = require('postcss');
-var styleguide = require('postcss-style-guide');
+var styleguide = require('postcss-style-gx');
 var input = fs.readFileSync('input.css', 'utf8');
 
 var output = postcss([
@@ -40,7 +41,7 @@ gulp.task('build:css', function () {
     var autoprefixer = require('autoprefixer')
     var customProperties = require('postcss-custom-properties')
     var Import = require('postcss-import')
-    var styleGuide = require('postcss-style-guide')
+    var styleGuide = require('postcss-style-gx')
     var nano = require('cssnano')
 
     return gulp.src('./app.css')
@@ -84,7 +85,7 @@ We can generate color palette from CSS Custom Properties with `@start color` and
 /* @end color */
 ```
 
-postcss-style-guide generate style guide from CSS comments that have special annotation(`@styleguide`).
+postcss-style-gx generate style guide from CSS comments that have special annotation(`@styleguide`).
 
 `@title`: set component name
 
@@ -149,9 +150,9 @@ You will get `styleguide/index.html` for the style guide.
 
 You can select a theme of style guide with `options.theme`.
 And you can also create original themes.
-When you create themes, please read [theme guideline](https://github.com/morishitter/postcss-style-guide/blob/master/docs/theme-guideline.md)
+When you create themes, please read [theme guideline](https://github.com/morishitter/postcss-style-gx/blob/master/docs/theme-guideline.md)
 
-All of postcss-style-guide themes that can be used are [here](https://www.npmjs.com/search?q=psg-theme).
+All of postcss-style-gx themes that can be used are [here](https://www.npmjs.com/search?q=psg-theme).
 
 ### Themes list
 
@@ -160,7 +161,7 @@ All of postcss-style-guide themes that can be used are [here](https://www.npmjs.
 - [1column](https://github.com/seka/psg-theme-1column)
 - [forest](https://github.com/morishitter/psg-theme-forest)
 
-### How to develop postcss-style-guide theme
+### How to develop postcss-style-gx theme
 
 - [Yeoman Generator](https://github.com/sotayamashita/generator-psg-theme)
 
