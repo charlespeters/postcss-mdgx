@@ -11,7 +11,7 @@ var markdownParser = require('./lib/markdown')
 var syntaxHighlighter = require('./lib/syntaxHighlight')
 var colorPalette = require('./lib/colorPalette')
 
-module.exports = postcss.plugin('postcss-stx', function(opts) {
+module.exports = postcss.plugin('postcss-mdgx', function(opts) {
   opts = opts || {}
 
   analyzer.setModules(syntaxHighlighter, markdownParser)

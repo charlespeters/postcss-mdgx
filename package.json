@@ -1,12 +1,12 @@
 {
-  "name": "postcss-style-gx",
+  "name": "postcss-mdgx",
   "version": "0.14.0",
   "description": "PostCSS plugin to generate a style guide automatically",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js"
   },
-  "repository": "charlespeters/postcss-style-gx",
+  "repository": "charlespeters/postcss-mdgx",
   "keywords": [
     "style-guide",
     "postcss-plugin"
